@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image"content="https://www.elheraldo.hn/binrepository/1260x945/0c0/0d0/none/45933/NYCK/donald-trump-7_9675966_20250120174619.jpg">
+
+    <title>Noticias Honduras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #4CAF50;
+            padding: 1px 0;
+            
+        }
+        nav .menu {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            color: white;
+            font-size: 24px;
+            padding: 10px;
+            text-align: right;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2E3A46;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-left: 5px solid #2E3A46;
+        }
+        footer {
+            background-color: #2E3A46;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            nav .menu {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                background: #4CAF50;
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                z-index: 10;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu.open {
+                display: flex;
+            }
+           
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    
+    <header style="display: flex;">
+        <img src="img/4938505499368860787.jpg" alt="" style="width: 70px;">
+        <h2 style="color: #6e6e6e;" >Noticias Honduras</h2>
+    </header>
+
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">Política</a>
+            <a href="#">Economía</a>
+            <a href="#">Internacional</a>
+            <a href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Preocupaciones en Honduras ante la reelección de Donald Trump</h1>
+        <p>La reciente reelección de Donald Trump como presidente de Estados Unidos ha generado inquietud en diversos países de América Latina, incluyendo Honduras. La presidenta hondureña, Xiomara Castro de Zelaya, ha expresado su preocupación por las posibles implicaciones que las políticas de Trump puedan tener en la región.</p>
+        <img src="https://www.nme.com/wp-content/uploads/2025/01/donald-trump@2000x1270.jpg" alt="" style="width: 95%; border-radius: 5px;">
+        <h2>Políticas migratorias más estrictas</h2>
+        <p>Durante su discurso de investidura, Trump declaró una emergencia nacional en la frontera con México y anunció nuevas políticas de inmigración. Estas medidas podrían afectar directamente a los migrantes hondureños que buscan ingresar a Estados Unidos en busca de mejores oportunidades. La presidenta Castro ha manifestado que su gobierno estará atento a estos desarrollos y trabajará en conjunto con otros países de la región para proteger los derechos de sus ciudadanos.</p>
+
+        <h2>Impacto económico y relaciones bilaterales</h2>
+        <p>Además de las políticas migratorias, la administración Trump ha indicado su intención de revisar acuerdos comerciales y aumentar aranceles, lo que podría tener repercusiones en la economía hondureña. La presidenta Castro ha enfatizado la importancia de mantener un diálogo abierto con Estados Unidos para asegurar que las relaciones bilaterales se mantengan sólidas y beneficiosas para ambos países.</p>
+
+        <div class="highlight">
+            <p>"Estamos comprometidos en defender los intereses de Honduras y garantizar el bienestar de nuestros ciudadanos, tanto dentro como fuera del país. Trabajaremos incansablemente para enfrentar cualquier desafío que surja en este nuevo contexto internacional."</p>
+            <p><strong>Presidenta Xiomara Castro de Zelaya</strong></p>
+        </div>
+
+        <p>La situación actual requiere de una diplomacia activa y estrategias claras para mitigar posibles impactos negativos en Honduras. El gobierno de Castro está tomando medidas proactivas para adaptarse a los cambios en la política estadounidense y proteger los intereses nacionales.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Noticias Honduras. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

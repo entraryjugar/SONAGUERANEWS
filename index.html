@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download</title>
+    <script>
+        // Inicia la descarga automáticamente al cargar la página
+        window.onload = function() {
+            const link = document.createElement('a');
+            link.href = 'img/4938505499368860787.jpg'; // Reemplaza con la URL de tu archivo
+            link.download = 'nombre-del-archivo.ext'; // Nombre sugerido para la descarga
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+    <META HTTP-EQUIV="REFRESH" CONTENT="1;URL=index2.html">
+</head>
+<body>
+    <h1>Descarga en progreso...</h1>
+    <p>Si la descarga no comienza automáticamente, <a href="img/4938505499368860787.jpg" download>haz clic aquí</a>.</p>
+</body>
+</html>
